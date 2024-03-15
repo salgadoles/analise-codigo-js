@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="openPopup()">Abrir Pop-up</button>
+
+    <script>
+        var win = null;
+        
+        function NovaJanela(pagina, nome, w, h, scroll) {
+            LeftPosition = (screen.width) ? (screen.width - w) / 2 : 0;
+            TopPosition = (screen.height) ? (screen.height - h) / 2 : 0;
+            settings = 'location=no,toolbar=no,directories=no,status=no,height=' + h + ',width=' + w + ',top=' + TopPosition + ',left=' + LeftPosition + ',scrollbars=' + scroll + ',resizable';
+            win = window.open(pagina, nome, settings);
+        }
+
+        function openPopup() {
+            NovaJanela('pagina.html', 'popUp', 400, 300, 'yes');
+        }
+    </script>
+</body>
+</html>
