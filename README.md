@@ -9,8 +9,8 @@ Este projeto consiste na análise de três códigos JavaScript fornecidos como p
 Este código cria uma página HTML com um relógio digital que exibe a hora atual.
 
 ### Arquivos Incluídos:
-- `main.css`: Estilos CSS para a página.
-- `main.js`: Script JavaScript para atualizar o relógio.
+- `style`: Estilos CSS para a página.
+- `script`: Script JavaScript para atualizar o relógio.
 
 ### Funcionalidades:
 - **HTML:**
